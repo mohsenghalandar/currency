@@ -1,0 +1,21 @@
+*{box-sizing: border-box ;}
+.main{
+    width: 85%;
+    border: 1px solid rgba(192, 192, 192, 0.486);
+    padding: 5px 5px 5px 5px;
+}
+.rank{
+    display: inline-block;
+    font-size: 12;}
+.icon{display: inline-block;width: 20px;height:20px;}
+.name{display: inline-block;padding: 5px 5px 5px 5px;}
+.symbol{display: inline-block;padding: 5px 10px 5px 5px;}
+.supply{display: inline-block;padding: 5px 10px 5px 5px;}
+.price{display: inline-block;padding: 5px 5px 5px 5px;}
+.change{display: inline-block;padding: 5px 5px 5px 5px;}
+.max_min{display: inline-block;padding: 5px 5px 5px 5px;}
+.max{display: block;font-size: 10px; padding: 5px 5px 5px 5px;}
+.min{display: block;font-size: 10px; padding: 5px 5px 5px 5px;}
+
+
+.chart{display: inline-block;padding: 5px 5px 5px 5px;}
