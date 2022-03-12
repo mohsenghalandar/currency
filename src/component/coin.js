@@ -12,7 +12,6 @@ const Coin = (props) => {
                 <p className={style.symbol}>{data.symbol}</p>
                 <p className={style.price}>{data.current_price}$</p>
                 <p className={style.supply}>{data.total_supply}</p>
-                <p className={style.change}>{data.price_change_24h}</p>
                 <span className={style.max_min}>
                     <p className={style.max}>{data.high_24h}</p>
                     <p className={style.min}>{data.low_24h}</p>
