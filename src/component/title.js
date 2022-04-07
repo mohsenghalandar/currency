@@ -8,34 +8,34 @@ const Title = (props) => {
         setFilter({...filter,per_page:event.target.value})
     }
     return (
-        <div>
-            <span>
+        <tr>
+            <th>
                 {
                     (filter.market_rank == "market_cap_desc")?
-                    <button onClick={()=>setFilter({...filter,market_rank:"market_cap_asc"})}>Rank<FiChevronUp /></button>
+                    <th onClick={()=>setFilter({...filter,market_rank:"market_cap_asc"})}>Rank<FiChevronUp /></th>
                     :
-                    <button onClick={()=>setFilter({...filter,market_rank:"market_cap_desc"})}>Rank<FiChevronDown /></button>
+                    <th onClick={()=>setFilter({...filter,market_rank:"market_cap_desc"})}>Rank<FiChevronDown /></th>
                 }
-            </span>
-            <button>name</button>
-            <span>
+            </th>
+            <th>name</th>
+            <th>
                 {   ( dd.range_type == "uptodown") ?
-                    <button onClick={()=>dispatch({type:"DownToUp",playload:dsc(dd.data)})}>price<FiChevronUp /></button>
+                    <th onClick={()=>dispatch({type:"DownToUp",playload:dsc(dd.data)})}>price<FiChevronUp /></th>
                     :
-                    <button onClick={()=>dispatch({type:"UpToDown",playload:asc(dd.data)})}>price<FiChevronDown /></button>
+                    <th onClick={()=>dispatch({type:"UpToDown",playload:asc(dd.data)})}>price<FiChevronDown /></th>
                 }
-            </span>
+            </th>
             
-            <button>total supply</button>
-            <button>max value</button>
-            <button>min value</button>
+            <th>total supply</th>
+            <th>max value</th>
+            <th>min value</th>
             <select id="per_page" value={filter.per_page} onChange={(event)=> changeHandler(event)}>
                 <option value='25'>25</option>
                 <option value='50'>50</option>
                 <option value='75'>75</option>
                 <option value='100'>100</option>
             </select>
-        </div>
+        </tr>
     );
 };
 

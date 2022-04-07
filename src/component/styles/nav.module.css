@@ -3,18 +3,56 @@
     width: 85%;
     direction: rtl;
     margin: 15px auto 5px auto;
-    border: 1px solid brown;
+   
+    
 }
 .logo{
+    
     display: inline-block;
     width: 25%;
-    border: 1px solid brown;
-
+    color: rgb(36, 16, 90);
+    margin: 0px auto 0px auto;
 }
 .search_box{
+    text-align: center;
     display: inline-block;
     width: 70%;
-    height: 2vw;
-    border: 1px solid brown;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 7px;
+    outline: silver;
+    padding: 5px 10px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    height: 30px;
 
 }
+@media screen and (min-width:501px) and (max-width:800px){
+    .main{
+        width:100% ;
+       
+    }
+    .logo{
+        display: inline-block;
+        width: 25%;
+    }
+    .search_box{
+        width: 70%;
+    }
+}
+@media screen and (max-width:500px) {
+    .main{
+        width:100% ;
+        margin: 5px 0px 5px 5px;
+        text-align: center; 
+    }
+    .logo{
+        display: block;
+        width: 85%;
+        
+    }
+    .search_box{
+        width: 85%;
+    }
+    
+    
+}
+

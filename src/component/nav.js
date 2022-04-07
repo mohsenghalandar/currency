@@ -19,8 +19,8 @@ const Nav = (props) => {
       }
     return (
         <div className={style.main}>
-          <p className={style.logo}>crypyo analaysis</p>  
-          <input className={style.search_box} value={searchV}  onChange={(event)=> {changehand(event)}} type='search' /> 
+          <h3 className={style.logo}>crypyo analaysis</h3>  
+          <input className={style.search_box} value={searchV}  onChange={(event)=> {changehand(event)}} placeholder='type your coin name' type='search' /> 
         </div>
     );
 };

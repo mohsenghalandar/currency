@@ -66,12 +66,16 @@ useEffect(()=>{
     return (
         <div>
             <Nav dd={dd} allCoin={allCoin} filter={filter} setFilter={setFilter} dispatch={dispatch}/>
-            <Title filter={filter} setFilter={setFilter} dd={dd} dispatch={dispatch}/>
+            <table>
+                <Title filter={filter} setFilter={setFilter} dd={dd} dispatch={dispatch}/>
+            </table>
+            
             {
                 !dd.data ? <img src={spinner} alt='loading' />
                 : 
-                    dd.data.map((item)=> <Coin key={item.id} data={item} />)
+                    dd.data.map((item)=> <Coin key={item.id}  data={item} />)
             }
+            
             <DownNav filter={filter} setFilter={setFilter} />
         </div>
     );
