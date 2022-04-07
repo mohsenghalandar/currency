@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import style from "./styles/nav.module.css"
 import search from './helpe_func/search';
 
+
 const Nav = (props) => {
     const {allCoin,dispatch,filter,setFilter} = props ;
     const [searchV,setSearchV] = useState('');
+    const [modal,setModal] = useState(false);
       const changehand = (event)=>{
         if( searchV === null)
         {
@@ -20,7 +22,7 @@ const Nav = (props) => {
     return (
         <div className={style.main}>
           <h3 className={style.logo}>crypyo analaysis</h3>  
-          <input className={style.search_box} value={searchV}  onChange={(event)=> {changehand(event)}} placeholder='type your coin name' type='search' /> 
+          <input className={style.search_box} value={searchV} onClick={()=>setModal(true)} onBlur={()=>setModal(false)}  onChange={(event)=> {changehand(event)}} placeholder='type your coin name' type='search' /> 
         </div>
     );
 };

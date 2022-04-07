@@ -6,7 +6,7 @@ import Title from './title';
 import DownNav from './downNav';
 import spinner from "../resource/spinner.gif"
 import search from './helpe_func/search';
-
+import { Route,Routes } from 'react-router';
 const initialState ={
     isLoading:true,
     range_type:'uptodown',
@@ -66,16 +66,14 @@ useEffect(()=>{
     return (
         <div>
             <Nav dd={dd} allCoin={allCoin} filter={filter} setFilter={setFilter} dispatch={dispatch}/>
-            <table>
-                <Title filter={filter} setFilter={setFilter} dd={dd} dispatch={dispatch}/>
-            </table>
-            
-            {
-                !dd.data ? <img src={spinner} alt='loading' />
-                : 
-                    dd.data.map((item)=> <Coin key={item.id}  data={item} />)
-            }
-            
+            <Title filter={filter} setFilter={setFilter} dd={dd} dispatch={dispatch}/>
+                <div>
+                    {
+                        !dd.data ? <img style={{margin:"0px auto 0px auto"}} src={spinner} alt='loading' />
+                    : 
+                    dd.data.map((item)=>  <Coin  key={item.id} data={item} />)
+                    }
+                </div>
             <DownNav filter={filter} setFilter={setFilter} />
         </div>
     );

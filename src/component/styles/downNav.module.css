@@ -1,0 +1,32 @@
+.main{
+    border: 1px solid green;
+    text-align: center;
+    
+}
+.btn{
+    float: left;
+    padding: 0px 0px 0px 0px;
+    color: rgb(77, 75, 75);
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0px auto 0px 45%;
+ 
+}
+
+.btn:hover {
+    color: black;
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.3);
+}
+.ii{
+    width: 25px;
+    height: 25px;
+}
+.page{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    height: 25px;
+    margin: -2px 5px 0px 5px;
+    
+}

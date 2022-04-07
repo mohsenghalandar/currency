@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Karla:wght@300&display=swap');
+
+.main{
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;padding: 5px 5px 5px 5px;
+    margin: 5px auto 5px auto;
+    border: silver 1px solid;
+    color: rgb(0, 17, 51);
+}
+
+.rank{
+    width: 13%;
+    height: 35px;
+    display: inline-block;
+    border-left: rgb(88, 88, 88) 2px solid;
+    padding: 0px 0px 0px 7px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rank:hover{
+    -webkit-box-shadow: 1px 1px 15px -4px rgba(0,0,0,0.2); 
+    border: rgba(88, 88, 88, 0.5) 1px solid;
+    box-shadow: 1px 1px 15px -4px rgba(0,0,0,0.2);
+}
+.name{
+    display: inline-block;
+    width: 20%;
+    height: 35px;
+    padding: 5px 0px 0px 7px;
+    border-left: rgb(88, 88, 88) 2px solid;
+}
+.price:hover{
+    -webkit-box-shadow: 1px 1px 15px -4px rgba(0,0,0,0.2); 
+    box-shadow: 1px 1px 15px -4px rgba(0,0,0,0.2);
+    border: rgba(88, 88, 88, 0.493) 1px solid;
+}
+.price{
+    cursor: pointer;
+    width: 15%;
+    display: inline-block;
+    padding: 0px 0px 0px 7px;
+    border-left: rgb(88, 88, 88) 2px solid;
+    height: 35px;
+    transition: 0.5s;
+}
+.total{
+    padding: 5px 0px 0px 7px;
+    width: 20%;
+    display: inline-block;
+    border-left: rgb(88, 88, 88) 2px solid;
+    height: 35px;
+}
+.change{
+    padding: 0px 0px 0px 0px;
+    height: 35px;
+    width: 15%;
+    text-align: center;
+    
+    display: inline-block;
+    font-size: 8px;
+    border-left: rgb(88, 88, 88) 2px solid;
+}
+.per_page{
+    width: 15%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+

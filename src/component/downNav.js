@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiChevronsLeft,FiChevronsRight} from "react-icons/fi";
+import style from './styles/downNav.module.css'
 
 const DownNav = (props) => {
     const {filter,setFilter} = props ;
+  
+
     const p_pager = () =>{
         if (filter.page < 10)
         {
@@ -20,10 +23,12 @@ const DownNav = (props) => {
         }
     }
     return (
-        <div>
-            <FiChevronsLeft onClick={m_pager} />
-                {filter.page}
-            <FiChevronsRight onClick={p_pager}  />
+        <div className={style.main} >
+            <span className={style.btn}><FiChevronsLeft className={style.ii} onClick={m_pager}  /></span>
+            <span>
+                <p className={style.page}>{filter.page}</p>
+            </span>
+            <span style={{marginLeft:'0%'}} className={style.btn}> <FiChevronsRight className={style.ii}  onClick={p_pager}  /></span>
         </div>
     );
 };
